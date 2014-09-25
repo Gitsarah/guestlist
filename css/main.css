@@ -1,0 +1,1985 @@
+/*------------------------------------------*/
+/*Delete this part of CSS once you finished*/
+/*the insertion of the code for the graph*/
+.img_DeleteMe{
+	width: 100%;
+}
+/*End*/
+
+/*------------------------------------------*/
+/*All CSS*/
+*{
+	font-family: GothamBook, Arial, Sans-Serif;
+}
+
+li{
+	list-style-type:none;
+}
+
+a{
+	text-decoration: none;
+	color:rgb(120, 120, 120);
+	cursor:pointer;
+}
+h1{
+	font-size:2em;
+	font-family:GothamBold, Arial, Sans-Serif;
+}
+h2{
+	font-size:1.5em;
+}
+h3{
+	font-size:1.17em;
+}
+p{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	/*margin: 0 12%;*/
+	max-width: 100%;
+	margin:0;
+}
+section{
+	margin: 0 3%;
+	max-width: 100%;
+	}
+input:required{
+	border: solid 1px #b7b7b7;
+	background-color: white;
+	background:none;
+}
+input:required:valid {
+	border: 1px solid #8cc152;
+	}
+input:focus:valid {
+	border: 1px solid #8cc152;
+	background:url("../img/input-valid.png") no-repeat 97% center;
+	}
+input:focus:invalid {
+	border: 1px solid #da4453;
+	background: url("../img/input-error.png") no-repeat scroll 97% center;
+}
+em{
+	color:#773E8F;
+}
+/*End*/
+
+/*------------------------------------------*/
+/*Index properties*/
+.logoIndex{
+	width: 165px;
+}
+
+.sectionIndex div{
+	width: 50%;
+}
+
+.sectionIndex div div{
+	margin-top: 40px;
+}
+
+.sectionIndex div h1{
+	font-size: 2.5em;
+	color: rgb(119,62,143);
+	font-family: GothamBook, Arial, Sans-Serif;
+	margin-top:0;
+}
+
+.sectionIndex div div a, .sectionIndex div div p{
+	display: inline;
+}
+.sectionIndex .fontlight{	
+	font-family:GothamLight, Arial, Sans-Serif;
+	color:#969696;
+	padding-left:5px;
+	padding-right:5px;
+	}
+
+.sectionIndex div div a:hover{
+	color: rgb(150,106,167);
+}
+
+.sectionIndex div form input{
+	display: block;
+	text-align: center;
+	height: 40px;
+	width: 50%;
+	font-size: 1.5em;
+	margin-top: 10px;
+	color: rgb(150,150,150);
+	border: solid 0.1em rgb(236,236,236);
+	border-radius: 5px;
+	vertical-align:middle;
+}
+
+.sectionIndex div form .signIn{
+	background-color: rgb(119,62,143);
+	color: white;
+	height:60px;
+	width: 51%;
+}
+/*End*/
+
+#donutchart_rosetti1 {
+	float: left;
+	height: 280px;
+	width: 280px;
+	margin-right:30px;
+}
+
+#donutchart_rosetti2 {
+	float: left;
+	height: 280px;
+	width: 280px;
+	margin-right:30px;
+}
+
+#donutchart_rosetti3 {
+	float: left;
+	height: 280px;
+	width: 330px;
+}
+.attachtext{
+	right: 100px;
+	width: 280px; 
+	height: 280px;
+	line-height:280px;
+	z-index:999;
+	}
+#barchart_rosetti1 {
+	height: 280px;
+	width: 280px;
+	float: left;
+}
+
+#barchart_rosetti2 {
+	height: 280px;
+	width: 280px;
+	float: left;
+}
+
+#barchart_rosetti3 {
+	height: 280px;
+	width: 280px;
+	float: left;
+}
+
+#chart-container {
+	clear: both;
+	margin-top: 40px;
+}
+
+/*------------------------------------------*/
+/*header properties*/
+.link{
+	/*font-size: 1.2em;*/
+}
+
+.nav li p{
+	color: rgb(255,255,255);
+	display: inline;
+}
+
+.nav li a{
+	color: rgb(255,255,255);
+}
+
+.nav{
+	background-color: rgb(119,62,143);
+	font-size: 0.8em;
+	height: 75px;
+}
+
+.nav .leftLogo{
+	padding: 0px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 25px;
+}
+.nav img{
+	margin-left:5px;
+	}
+.logoGL{
+    width: 84px;
+}
+
+.nav li{
+	margin-top: 37px;
+}
+
+.nav li .guest{
+	font-size: 1.5em;
+}
+
+body .nav .center{
+	float: left;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 40px;
+}
+
+body .nav .center a{
+	padding: 33px 10px;
+	color: rgb(171,147,182);
+}
+
+body .nav .center a:hover {
+    padding: 11px 10px;
+    margin: 9px 0px;
+    color: #FFF;
+    background-color: rgb(106,49,128);
+    border-radius: 5px;
+	font-weight: bold;
+}
+
+.nav .logo img{
+	width: 35px;
+	height: 35px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.nav .left{
+	float: left;
+}
+
+.nav .right{
+	float: right;
+	margin-top: 37px;
+	margin-right: 30px;
+}
+
+.link img{
+	width: 13px;
+	height: 13px;
+}
+
+.commentTextConnection{
+	display: none; /*Basically hidden*/
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+.commentTextConnection form input{
+	border: solid 1px #b7b7b7;
+	background-color: white;
+	background:none;
+	width: 100%;
+	height: 20px;
+	padding: 15px 0;
+	text-align: left;
+	text-indent: 15px;
+}
+
+/*.commentTextConnection form input:valid {
+	border: 1px solid #8cc152;
+	}
+.commentTextConnection form input:focus:invalid {
+	border: 1px solid #da4453;
+	@incude single-box-shadow(#da4453 0 0 5px);
+	background: url("../img/input-error.png") no-repeat scroll 97% center;
+}
+.commentTextConnection form input:focus:valid {
+	border: 1px solid #8cc152;
+	background:url("../img/input-valid.png") no-repeat 97% center;
+	}*/
+img.imgregister{
+	height: 31px;
+	width: 31px;
+	vertical-align:middle;
+	padding-right: 10px;
+}
+.commentTextConnection form .register{
+	background-color: #773d8e;
+	border: none;
+	height: 50px;
+	width: 49%;
+	color: white;
+}
+.commentTextConnection form .reset{
+	background-color: #e1e1e1;
+	border: none;
+	height: 50px;
+	width: 48%;
+	color: white;
+}
+.commentTextConnection form .login{
+	background-color: #773d8e;
+	border: none;
+	height: 50px;
+	width: 100%;
+	color: white;
+}
+.commentTextConnection form button.login:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+.commentTextConnection form button.login:active {
+	background-color: #773d8e;
+    -moz-box-shadow:inset 0px 2px 5px #000000;
+    -webkit-box-shadow:inset 0px 2px 5px #000000;
+    box-shadow:inset 0px 2px 5px #000000;
+}
+.commentTextConnection .title{
+	font-size: 0.5em;
+	text-align:left;
+	color:#773d8e;
+}
+/*End*/
+
+/*----------------------------------*/
+/*Section main page CSS*/
+section{
+	margin-top: 50px;
+}
+/*End*/
+
+/*----------------------------------*/
+/*menu calender CSS*/
+.menuCalender{
+	margin-top: 50px;
+}
+
+.menuCalender h1{
+	color: rgb(137,137,137);
+	font-family: GothamBold, Arial, Sans-Serif;
+}
+
+.menuCalender .floatLeft li a, .menuCalender .floatLeft li p{
+	display: inline;
+	font-size: 0.8em;
+	font-weight: 200;
+	color: rgb(200,200,200);
+}
+
+.menuCalender .floatLeft li a:focus{
+	color: rgb(118,60,141);
+}
+
+.menuCalender .floatLeft{
+	float: left;
+}
+
+.formAdminMenu *{
+	font-family: GothamLight, Arial, Sans-Serif;
+	font-weight: bold;
+	margin-top: 2px;
+}
+
+.menuCalender .floatRight{
+	float: right;
+}
+
+.menuCalender .floatRight table{
+	border-collapse: collapse;
+}
+
+.titleTable{
+	text-align: center;
+}
+
+.calendarFirstLine{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.orangeLetter{
+	color: rgb(248,187,70);
+}
+
+.greenLetter{
+	color: rgb(0,167,92);
+}
+
+.greyLetter{
+	color: rgb(111,111,111);
+}
+
+.redLetter{
+	color: rgb(255,0,0);
+}
+.blueLetter{
+	color: rgb(1,115,185);
+}
+.calendarFirstLine td p{
+	font-family: GothamBold, Arial, Sans-Serif;
+}
+
+.purpleCalendar td p{
+	margin: 0 10px;
+	font-size: 0.8em;
+	color: rgb(119,62,140);
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+
+.greyCalendar td p{
+	margin: 0 10px;
+	font-size: 0.8em;
+	color: rgb(200,200,200);
+	font-family: GothamLight, Arial, Sans-Serif;
+	font-weight: bold;
+}
+
+.midCalendar{
+	border-left: solid 0.01em;
+	border-right: solid 0.01em;
+	border-color: rgb(240,240,240);
+}
+
+.menuCalender .floatLeft form select{
+	border: solid 0.1em;
+	border-color: rgb(200,200,200);
+	padding: 3px 15px;
+	color: rgb(150,150,150);
+}
+/*End*/
+
+/*----------------------------------*/
+/*form selector CSS*/
+.formSelector{
+	clear: both;
+	color: rgb(178,178,178);
+	overflow: hidden;
+	margin-top: 72px;
+	margin-bottom:30px;
+}
+
+.formSelector form p{
+	float: left;
+	margin-top: 6px;
+}
+
+.formSelector form select{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: left;
+	border: solid 0.01em rgb(150,150,150);
+	text-align: center;
+	padding: 5px;
+	color: black;
+	font-size: bold;
+}
+.formSelector form .Boxselect1{
+	float: left;
+	}
+.formSelector form .Boxselect3{
+	float: right;
+	}
+.formSelector form .Boxselect2{
+	float: left;
+	margin-left: 5%;
+	}
+/*End*/
+
+/*----------------------------------*/
+/*table calendar CSS*/
+
+.clear{
+	clear: both;
+	border-top: solid 0.1em;
+	/*border-bottom: solid 0.1em;*/
+	border-color: rgb(228, 228, 228);
+}
+
+.clear table{
+	margin-top: 30px;
+	border-spacing: 0.2em;
+	width: 100%;
+	text-align: center;
+}
+
+.grey{
+	height: 30px;
+	background-color: rgb(235,235,235);
+}
+
+td p{
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+
+.purple p, .firstLine td p{
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+
+.firstLine .purple{
+	width: 12.8%;
+}
+
+.firstLine .purple, .secondLine .purple {
+	width: 10.4%;
+	color: rgb(255,255,255);
+	background-color: rgb(195,155,218);
+}
+
+
+/*Color of the day*/
+.monday{
+	background-color: rgb(171,234,223);
+}
+
+.tuesday{
+	background-color: rgb(247,223,255);
+}
+
+.wednesday{
+	background-color: rgb(174,226,126);
+}
+
+.thursday{
+	background-color: rgb(237,191,132);
+}
+
+.friday{
+	background-color: rgb(252,218,217);
+}
+
+.saturday{
+	background-color: rgb(245,237,164);
+}
+
+.sunday{
+	background-color: rgb(162,237,243);
+}
+/*------------------------------*/
+
+.firstLine{
+	height: 40px;
+}
+
+.secondLine{
+	height: 50px;
+}
+
+.secondLine td{
+	border: solid 0.01em rgb(228,228,228);
+	padding: 5px;
+}
+.secondLine textarea{
+	height:100%;
+	margin:0;
+	border: 0.01em solid white;
+	background-color:white;
+	text-align:center;
+	line-height:13px;
+	padding: 10px 0 0;
+	}
+.clear .linkTable a{
+	padding: 10px 20px;
+	border: solid 0.01em rgb(230,230,230);
+	border-radius: 5px;
+	display: inline;
+	color: rgb(150,150,150);
+}
+
+.clear .linkTable a:focus{
+	background-color: rgb(214,196,222);
+}
+
+.linkTable{
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+/*End*/
+
+/*----------------------------------*/
+/*buttons CSS*/
+.hideButton{
+	margin-top: 15px;
+	text-align: center;
+	border: 0.01em solid #DCDCDC;
+	width: 100%;
+	padding: 10px 0;
+	display: block;
+	font-size: 2em;
+	color: rgb(215,215,215);
+	font-family: GothamBold, Arial, Sans-Serif;
+}
+/*End*/
+
+/*----------------------------------------*/
+/*form month CSS*/
+.formSelector2{
+	clear: both;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.formSelector2 form select{
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0px;
+	color: #DADADA;
+	font-family: GothamBook, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	border: 0.01em solid #DCDCDC;
+}	
+/*End*/
+
+/*---------------------------------------*/
+/*bottom Tables CSS*/
+.bottomTables{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.bottomTables form table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.first{
+	height: 30px;
+	border-bottom: solid;
+	border-width: 0.3em;
+	height: 60px;
+	font-weight: bold;
+}
+
+.monday .first{
+	border-color: rgb(174,221,237);
+}
+
+.tuesday .first{
+	border-color: rgb(196,226,209);
+}
+
+.wednesday .first{
+	border: none;
+}
+
+.thursday .first{
+	border: none;
+}
+
+.friday .first{
+	border-color: rgb(231,219,231);
+}
+
+.saturday .first{
+	border-color: rgb(253,217,219);
+}
+
+.sunday .first{
+	border-color: rgb(212,244,239);
+}
+
+.wednesday .others{
+	background-color: rgb(242,238,236);
+}
+
+.thursday .others{
+	background-color: rgb(254,243,237);
+}
+
+.first td{
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.first td p{
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+
+.ligne1, .ligne3, .ligne4, .ligne5, .ligne6{
+	font-family: GothamLight, Arial, Sans-Serif;
+	width: 10%
+}
+
+.ligne2{
+	width: 30%;
+}
+
+.others{
+	height: 100px;
+	border-bottom: solid 0.1em;
+	border-color: rgb(255,255,255);
+}
+
+.others td p{
+	text-align: center;
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+
+textarea{
+	/*margin-top: 15px;
+	margin-bottom: 15px;*/
+	color: rgb(85,85,85);
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+
+.textareaMonday{
+	background-color: rgb(229,246,253);
+}
+
+.textareaTuesday{
+	background-color: rgb(233,246,239);
+}
+
+.textareaWed{
+	background-color: rgb(248,247,245);
+}
+
+.textareathu{
+	background-color: rgb(255,250,247);
+}
+
+.textareafri{
+	background-color: rgb(255,249,255);
+}
+
+.textareasat{
+	background-color: rgb(255,245,244);
+}
+
+.textareasun{
+	background-color: rgb(242,252,251);
+}
+
+.writtenSpec{
+	clear: both;
+}
+
+.writtenSpec a, .writtenSpec p{
+	display: inline;
+	font-size:0.8em;
+	color: rgb(85,85,85);
+}
+
+.nameWritten{
+	float: left;
+}
+
+.improve, .to_do, .proofed, .written{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.improve{
+	background-color: rgb(255,0,0);
+}
+
+.to_do{
+	background-color: rgb(255,255,255);
+}
+
+.proofed{
+	background-color: rgb(129,221,184);
+}
+
+.written{
+	background-color: rgb(244,96,48);
+}
+
+.letterGrey{
+	color: rgb(85,85,85);
+	font-size: 0.7em;
+	margin-top: 3px;
+}
+
+.fontLight{
+	font-family: GothamLight, Arial, Sans-Serif;
+	border-left: solid 0.1em;
+	border-color: rgb(111,111,111);
+	padding-left: 10px;
+}
+
+.submit{
+	width: 100%;
+	background-color: rgb(119,62,143);
+	height: 50px;
+	color: rgb(255,255,255);
+	font-size: 2em;
+}
+/*End*/
+
+/*-----------------------------------------*/
+/*Menu navigation Admin page CSS*/
+.title{
+	text-align: center;
+	font-family: GothamBold, Arial, Sans-Serif;
+	color: rgb(149,149,149);
+}
+
+.menuNavAdmin {
+	margin-top: 20px;
+}
+
+.menuNavAdmin *{
+	display: inline;
+	font-family: GothamLight, Arial, Sans-Serif;
+	color: rgb(110,110,110);
+	font-size: 0.9em;
+	margin-right: 40px;
+}
+
+.menuNavAdmin .floatRight{
+	float: right;
+	margin: 0;
+}
+
+.menuNavAdmin .floatRight *{
+	margin: 0;
+}
+
+.white{
+	background-color: white !important;
+	border: solid 0.01em !important;
+	border-color: rgb(210,210,210) !important;
+}
+/*End*/
+
+/*-----------------------------------------*/
+/*Table admin CSS*/
+.formAdmin{
+	margin-top: 15px;
+	width: 100%;
+}
+
+.tableAdmin{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tableAdmin tbody tr th{
+	width: 10%;
+	font-size: 0.8em;
+}
+
+.tableAdmin tbody tr th, .tableAdmin tbody tr td{
+	padding: 10px 20px;
+}
+
+.tableAdmin tbody tr{
+	border-bottom: solid 0.01em rgb(240,240,240);
+}
+
+.tableAdmin tbody tr .tweet{
+	width: 55%;
+	text-align: center;
+}
+
+.tableAdmin tbody tr .lastColumn{
+	width: 15%;
+}
+
+.firstLineAdmin{
+	background-color: rgb(116,61,145);
+	color: white;
+	height: 60px;
+	text-align: left;
+}
+
+.tableMid{
+	border-left: solid 0.01em rgba(230,230,230,0.5);
+	border-right: solid 0.01em rgba(230,230,230,0.5);
+}
+
+.firstLineAdmin th *{
+	font-weight: normal;
+}
+
+.textareaPart textarea{
+	width: 100%;
+	padding:5px;
+}
+
+.borderYellow{
+	border: solid 0.1em rgb(252,218,0);
+}
+
+.borderRed{
+	border : solid 0.1em rgb(255,0,0);
+}
+
+.borderGreen{
+	border: solid 0.1em rgb(33,167,80);
+}
+.borderGrey{
+	border: solid 0.1em rgb(150,150,150);
+}
+
+.textareaPart .floatLeft{
+	float: left;
+	}
+.textareaPart .floatRight{
+	float: right;
+}
+
+.textareaPart .floatLeft *, .textareaPart .floatRight *{
+	display: inline;
+}
+
+.secondLineAdmin *, .thirdLineAdmin *{
+	color: #9b9b9b;
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+.secondLineAdminSetting, .thirdLineAdminSetting{
+	border:hidden;
+	}
+	
+.formAdmin .tableAdmin .secondLineAdmin .colorDay, .formAdmin .tableAdmin .thirdLineAdmin .colorDay{
+	font-size: 1.5em;
+	font-weight: 300;
+	color: rgb(151,108,173);
+}
+
+.thirdLineAdmin, .thirdLineAdminSetting{
+	background-color: rgb(245,245,245);
+}
+
+.thirdLineAdmin .textareaPart textarea{
+	background-color: rgb(245,245,245);
+}
+
+.thirdLineAdmin .textareaPart .commentText{
+	border: solid 0.1em rgb(230,230,230);
+}
+
+.twitor{
+	color: rgb(19, 170, 242);
+	font-size: 0.5em;
+}
+
+.logoTwitter{
+	width: 10px;
+	height: 10px;
+	vertical-align: text-top;
+}
+
+.nbTweet{
+	color: rgb(255, 0, 0);
+	/*color: rgb(19,170,242);
+	border: solid 0.01em rgb(230,230,230);
+	border-radius: 5px;*/
+	font-size: 0.8em;
+	padding: 4px 5px;
+}
+
+.commentTweet, .saveTweet{
+	color:#666;
+	border: solid 0.01em rgb(230,230,230);
+	border-radius: 5px;
+	font-size: 0.8em;
+	padding: 4px 5px;
+	font-weight: normal;
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+.delete{
+	font-size: 0.8em;
+	padding: 20px 5px;
+	font-family: GothamLight, Arial, Sans-Serif;
+	background:url("../img/poubelle.png") no-repeat left 45%;
+	background-size: 14px 17px;
+	}
+.thirdLineAdmin 
+.commentTweet:focus{
+	font-weight: bold;
+}
+
+.commentText{
+	display: none; /*hidden by default*/
+	color: rgb(127,78,154);
+	font-family: GothamLight, Arial, Sans-Serif;
+}
+
+.delete{
+	width: 82%;
+	/*margin-bottom: 10px;*/
+}
+
+.delete center{
+	width: 100%;
+}
+
+.delete a{
+	font-size: 0.8em;
+	padding: 0 30px;
+	font-weight: normal;
+	font-family: GothamBook, Arial, Sans-Serif;
+}
+
+.label{
+	color: rgb(230,230,230);
+}
+
+.firstLineAdmin th .label{
+	margin-left: -5px;
+}
+
+.radio{
+	padding: 0 !important;
+}
+
+.radio div{
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+input[type=radio], input[type=checkbox]{
+    display: none;
+	float:left;
+}
+
+.radio div .label, .firstLineAdmin th .label{
+    background-image:url(../img/radio.png);
+	background-size: 12px 12px;
+}
+
+input[type=radio] + label.label , input[type=checkbox] + label.label{
+    padding-left: 25px;
+    background-repeat:no-repeat;
+}
+
+input[type=radio]:checked + label.label {
+	color: rgb(150,150,150);
+}
+
+input[type=radio].improveAdmin:checked + label.label {
+	background-image: url(../img/improveAdmin.png);
+}
+
+input[type=radio].approvedAdmin:checked + label.label, input[type=checkbox].approvedAdmin:checked + label.label{
+	background-image: url(../img/approvedAdmin.png);
+}
+
+input[type=radio].checkAdmin:checked + label.label {
+	background-image: url(../img/checkAdmin.png);
+}
+
+/*input[type=checkbox].checkbox:checked + label.labelLeft, input[type=checkbox].checkbox:checked + label.label, input[type=checkbox].checkbox:checked + label.labelLeftWithoutImg{
+	color: rgb(1,188,181);
+}*/
+
+.tableGraphRight{
+	width: 100%;
+	font-size: 0.7em;
+	border-collapse: collapse;
+	padding: 0;
+}
+
+.tableGraphRight tbody tr td p{
+	text-align: center;
+	color: rgb(150,150,150);
+}
+
+.tableGraphRight tbody .line1 td{
+	border-left: solid 0.01em rgb(100,100,100);
+}
+
+.tableGraphRight tbody .line1 .noBorderLeft{
+	border-left: none;
+}
+
+.sizeWidth50{
+	width: 50%;
+}
+/*End*/
+
+/*----------------------------------------------*/
+/*You page CSS*/
+#poubelle{
+	float: right;
+	width: 15px;
+}
+
+.littleEm{
+	font-size: 0.3em;
+	color: black !important;
+}
+
+.purple{
+	color: rgb(117,62,139) !important;
+}
+
+.displayed{
+	display: initial !important;
+	margin-right: 10px;
+}
+
+.bold{
+	font-weight: bold !important;
+}
+
+/*.youMembers{
+	margin-right: 15px;
+}
+
+.youMembers div{
+	display: none; /*not show on the beginning*/
+/*	text-align: right;
+	color: rgb(175,175,175);
+}
+*/
+/*.youMembers div p:hover, .youMembers div p:focus{
+	color: rgb(134,85,154);
+	font-weight: bold;
+}*/
+
+
+.border{
+	padding: 15px;
+	border: solid 0.01em rgb(236,236,236);
+}
+
+.youInnerDiv{
+	border: solid 0.01em rgb(236,236,236);
+	border-radius: 20px;
+	padding: 20px 5%;
+	margin: 0px 10px;
+}
+
+.youInnerDiv .floatLeft{
+	float: left;
+	border: none !important;
+	margin: 0;
+	padding: 0 !important;
+}
+
+.youInnerDiv .yes, .youInnerDiv .no{
+	border: solid 0.01em rgb(236,236,236);
+	margin: 10px 0;
+	padding: 10px 20px;
+	border-radius: 15px;
+	color: rgb(149,149,149);
+}
+
+.youInnerDiv .yes:hover, .youInnerDiv .yes:focus{
+	background-color: rgb(49,184,125);
+	color: white;
+}
+
+.youInnerDiv .no:hover, .youInnerDiv .no:focus{
+	background-color: red;
+	color: white;
+}
+
+/*input[type=checkbox].checkbox:checked + label.labelLeft, input[type=checkbox].checkbox:checked + label.label{
+	color: rgb(1,188,181);
+}*/
+
+.marginTop{
+	margin-top: 30px;
+}
+
+.borderBottom{
+	border-bottom: solid 0.01em rgb(236,236,236);
+}
+
+.youInnerDivGlob{
+	margin-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid 0.01em rgb(236,236,236);
+}
+
+.youInnerDivGlob *{
+	display: initial;
+}
+
+.youInnerDivGlob div img{
+	width: 80%;
+	text-align: right;
+}
+
+.youInnerDivGlob .floatLeft{
+	float: left;
+	border: none !important;
+}
+
+.youInnerDivGlob .floatRight{
+	float: right;
+	margin-right: 15px;
+}
+
+.youInnerDivGlob .floatRight label img{
+	width: 20px;
+	height: 20px;
+}
+
+.centered{
+	text-align: center;
+}
+
+.youInnerDivGlob .youLeftDiv{
+	width: 150px;
+}
+
+.refreshYou{
+	border: solid 0.01em rgb(236,236,236);
+	border-radius: 5px;
+	color: rgb(150,150,150);
+	padding: 10px 40%;
+	text-align: center;
+}
+
+.overflowBigScrollY{
+	overflow-y: scroll;
+	max-height: 670px;
+}
+
+.border .floatLeft{
+	padding-bottom: 15px;
+	border-bottom: solid 0.01em rgb(236,236,236);
+}
+
+.bolder{
+	font-family: GothamBold, Arial, Sans-Serif;
+	color: rgb(120,120,120);
+}
+
+.youInnerDiv{
+	display: none;
+	margin-top: 15px;
+}
+
+.youInnerDiv .floatRight{
+	float: right;
+}
+
+.border .floatLeft li *{
+	font-size: 0.8em;
+	display: inline;
+	color: rgb(188,188,188);
+}
+
+.border .floatLeft li a:hover, .border .floatLeft li a:focus{
+	color: rgb(137,92,156);
+}
+/*End*/
+
+/*----------------------------------------------*/
+/*For pop-up delete option CSS*/
+#fade { /*--background black opaque-*/
+	display: none; /*--Hidden by default--*/
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+
+.popup_block{
+	display: none; /*--Hidden by default--*/
+	width: 40%;
+	background: white;
+	padding: 50px 20px;
+	text-align: left;
+	color: #ebebeb;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	font-size: 4em;
+	/*--differents deffinition of the Box Shadow in CSS3--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	/*--border-radius set in CSS3--*/
+}
+.popup_block P{
+	font-size: 0.5em;
+	}
+
+img.btn_close {
+	float: right;
+	margin: -35px -10px 0 0;
+}
+
+.close{
+	padding: 0 !important;
+}
+
+/*.popup_block .commentTextConnection .title{
+	display: block;
+}*/
+
+.popup_block *{
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*.popup_block section *{
+	text-align: center;
+	height: 35px;
+	border: none;
+	border-radius: 3px;
+}*/
+
+.popup_block section .title{
+	font-family: GothamBold, Arial, Sans-Serif;
+}
+
+.popup_block section .login{
+	color: white;
+	background-color: #773d8e;
+	height: 50px;
+}
+
+.popup_block p{
+	color: rgb(113,61,145);
+}
+
+.popup_block .choose{
+	/*border: solid 0.01em rgb(113,61,145);*/
+	border-radius: 4px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.popup_block .choose a{
+	font-family: GothamLight, Arial, Sans-Serif;
+	padding: 0 15px;
+	font-size:0.5em;
+	border: 0.01em solid rgb(113, 61, 145);
+}
+
+.deleteOption:hover{
+	color: white !important;
+	background-color: rgb(113,61,145);
+	border-radius: 4px;
+}
+
+.deleteOption{
+	color: black !important;
+}
+#popup_forgotpass P{
+	color: black;
+    display: block;
+    text-align: left;
+	font-size: 0.4em;
+	}
+/*End*/
+
+/*---------------------------------------------------*/
+/*back to top & More button CSS*/
+.goTop, .goTop *{
+	padding: 20px 0;
+	color: black;
+	font-size: 0.85em;
+}
+
+.showMore{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 1.5em;
+	text-align: center;
+	border: solid 0.01em rgb(230,230,230);
+}
+
+.showMore *{
+	width: 100%;
+	padding: 10px 40%;
+	font-size: 1.2em;
+	color: rgb(200,200,200);
+	font-family: GothamBold, Arial, Sans-Serif;
+}
+
+.greyBorderBottom{
+	margin-top: 10px;
+	width: 100%;
+	border: solid 0.1em rgb(230,230,230);
+}
+/*End*/
+
+/*-----------------------------------------------------*/
+/*Left Column of the team page CSS*/
+/*.leftColumn{
+	float: left;
+	width: 25%;
+	border-right: solid 0.01em rgb(230,230,230);
+}/*
+
+.leftColumn h1{
+	font-family: GothamLight, Arial, Sans-Serif;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: rgb(150,150,150);
+}
+
+.leftColumn .top{
+	min-height: 150px;
+	/*border-bottom: solid 0.01em rgb(230,230,230);*/
+}
+
+.leftColumn .top .formAdminMenu{
+	width: 100%;
+}
+
+.leftColumn .top .formAdminMenu select{
+	color: rgb(150,150,150);
+	border: 0.1em solid #C8C8C8;
+	padding: 3px 15px;
+	width: 95%;
+}
+
+.leftColumn .infoUser{
+	border-bottom: solid 0.01em rgb(230,230,230);
+}
+
+/*.infoUser .titleAccount{
+	font-size: 1.2em;
+	text-align: center;
+}*/
+
+.infoUser .titleAccount .becomePurple{
+	color: rgb(150,150,150);
+}
+
+.infoUser .titleAccount .becomePurple:focus{
+	font-family: GothamBold, Arial, Sans-Serif;
+	color: rgb(119,62,142);
+}
+
+.overflowScrollY{
+	overflow-y: scroll;
+	max-height: 370px;
+}
+
+/*form .formLeft{
+	border: solid 0.01em rgb(230,230,230);
+}*/
+
+/*.formLeftHeight{
+	height: 247px;
+}*/
+
+.innerDivMidHeight{
+	height: 262px;
+}
+
+.innerDivRightHeight{
+	height: 262px;
+}
+
+/*form .formLeft div .labelLeft{
+	color: black;
+	background: url('../img/false.png') no-repeat right;
+	background-size: 18px 18px;
+	padding-right: 32px;
+	margin-right: 20px;
+	float: right;
+}*/
+
+/*form .formLeft div .labelLeftWithoutImg{
+	color: black;
+	text-align: right;
+	float: right;
+	margin-right: 15px;
+}*/
+
+/*form .formLeft div .falseDeleteOption{
+	width: 18px;
+	height: 18px;
+	float: right;
+	margin-right: 20px;
+}*/
+	
+/*form .formLeft div .label{
+    background-image:url(../img/false.png);
+	background-size: 18px 18px;
+	color: black;
+}*/
+
+/*form .formLeft .showMoreButton, .formLeft2 .showMoreButton{
+	margin: 20px 0;
+	text-align: center;
+	border: solid 0.01em rgb(228,228,228);
+	border-radius: 5px;
+	padding: 10px 0;
+	width: 90%;
+}
+
+form .formLeft .showMoreButton .button, form .formLeft2 .showMoreButton .button{
+	color: rgb(150,150,150);
+	padding: 10px 25%;
+}
+
+form .formLeft2 .showMoreButton .button2{
+	color: rgb(150,150,150);
+	padding: 10px 21%;
+}
+
+form .formLeft div,*/ form .formLeft2 div{
+	margin-top: 15px;
+	
+}
+/*End*/
+
+/*---------------------------------------------*/
+/*Middle column of the team page CSS*/
+
+
+
+.midMargin{
+	margin-left: 25%;
+}
+
+
+.teamProgress{
+	margin-top: 15px;
+}
+
+
+/*.innerDivLeft form .formLeft{
+	border: none;
+}*/
+
+
+.overflowHidden{
+	overflow: hidden;
+}
+
+.addUserButton{
+	color: rgb(150,150,150);
+}
+
+.addUserButton2{
+	color: rgb(150,150,150);
+	padding: 10px;
+}
+
+.floatLeftMid{
+	margin-top: 10px;
+}
+
+.floatLeftMid div{
+	display: inline;
+}
+
+.greenTableMid{
+	color: rgb(2,189,180);
+}
+
+.purpleTableMid{
+	color: rgb(243,108,166);
+}
+
+.orangeTableMid{
+	color: rgb(251,171,134);
+}
+
+.blueTableMid{
+	color: rgb(105,201,243);
+}
+
+.blueTableMid{
+	color: rgb(105,201,243);
+}
+
+.green2TableMid{
+	color: rgb(125,202,160);
+}
+
+.purpke2TableMid{
+	color: rgb(137,130,184);
+}
+
+.redTableMid{
+	color: rgb(255,0,0);
+}
+
+.greyColor{
+	color: rgb(161,161,161);
+}
+/*End*/
+
+/*For report page*/
+.report_selectAccount, .report_selectMonth, .report_button{
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	padding: 6px 8px 6px 10px;
+	float: right;
+	margin-left: 5px;
+	text-align: center;
+	border: solid 0.1em #dcdcdc;
+}
+
+.report_selectAccount{
+	width: 89%;
+	float: left;
+	/*margin-left: 10%;*/
+	height: 50px;
+    line-height: 16px;
+  	-webkit-appearance: menu;
+  	-moz-appearance: menu;
+	 appearance: menu;
+  	text-indent: 0.01px;
+  	color: rgb(120, 120, 120);
+  	cursor:pointer;
+  	background: transparent url("/img/smart_arrows.png") no-repeat scroll 97% 8px;
+  	@media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background: transparent url("/img/smart_arrows@2x.png") no-repeat scroll 97% 8px;
+      background-size: 16px 144px;
+      outline:none;
+    }
+}
+.report_selectAccount option{
+    background: none repeat scroll 0 0 #fff;
+	border-bottom:solid 0.01em #dcdcdc;;
+	border-top:solid 0.01em #dcdcdc;;
+    padding:15px 0;
+    color:rgb(120, 120, 120);
+}
+.report_selectAccount:focus {
+    outline: none;
+}
+.report_selectAccount:hover,.report_selectAccount:active{
+    color:#773E8F;
+}
+
+.midMargin .report_floatLeft h1, .midMargin .report_floatLeft p{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.midMargin .report_floatLeft p{
+	color: rgb(110,201,158);
+}
+
+.report_floatLeft{
+	padding-bottom: 15px;
+	border-bottom: solid 0.01em rgb(236,236,236);
+}
+
+.reportH2{
+	color: rgb(121,60,144);
+}
+
+.borderBottom{
+	border-bottom: solid 0.01em rgb(236,236,236);
+	padding-bottom: 20px;
+}
+
+.tableReport2{
+	margin: 0;
+	padding: 0;
+}
+
+.numberFollowers{
+	font-size: 6em;
+	font-weight: bold;
+	margin-top: 17%;
+	color: rgb(121,60,144);
+}
+
+.Handoo_tableLeft{
+	vertical-align: middle;
+	font-size: 1.2em;
+	color: rgb(127,127,127);
+	width: 40%;
+}
+
+.reportfloatLeft{
+	float: left;
+}
+
+.reportfloatRight{
+	float: right;
+}
+
+.tableReport{
+	width: 100%;
+}
+
+.tableReport td{
+	width: 49%;
+}
+
+.tableReport2 .letterGreen{
+	margin: 0;
+}
+
+.tableReport .letterPurple{
+	margin: 0;
+}
+
+.logoTwitter{
+	width: 15px;
+	height: 15px;
+}
+
+.textalignLeft{
+	text-align: left;
+}
+
+.rightBloc{
+	margin-left: 10%;
+}
+
+.textalignRight{
+	text-align: right;
+}
+
+.logoAccountTwitter{
+	border: solid 0.01em rgb(180,180,180);
+}
+
+.positionMiddle{
+	margin-top: -30px;
+}
+
+.letterPurple{ 
+	color: rgb(121,60,144);
+}
+
+.letterRed{ 
+	color: #ff6666;
+}
+
+.letterBlue{ 
+	color: #00b0ea;
+}
+
+.letterYellow{ 
+	color: #fff146;
+}
+
+.letterGreyH3{
+	color: rgb(187,187,187);
+	float: left;
+	font-size: 1.5em;
+	width: 48%;
+	margin: 0 0 10px 0;
+}
+
+.letterGreyH4{
+	color: rgb(187,187,187);
+	font-size: 1.1em;
+}
+
+.letterGreyHover{
+	color: rgb(187,187,187);
+	font-size: 2em;
+	margin: 5px 0;
+}
+
+.letterGreyHover:hover, .letterGreyHover:active{
+	color: rgb(119,60,142);
+}
+
+.marginLeft{
+	margin-left: 10%;
+}
+
+.letterGreen{
+	font-size: 2em;
+	margin-top: 10px;
+	color: rgb(48,185,126);
+	font-weight: bold;
+}
+
+.clearBoth{
+	clear: both;
+}
+
+#Handoo_progress{ 
+	float: right;
+	width: 60%;
+}
+
+#twitterFollowerDiv{
+	border-left: solid 0.3em rgb(119,61,142);
+	padding-left: 15px;
+	/*width:27%;*/
+	margin-bottom:25px;
+}
+.nbfollowers{
+	font-size: 2em;
+	margin-top: 10px;
+	color: rgb(48,185,126);
+	font-weight: bold;
+	text-align: right;
+}
+#Handoo_progress p{
+	margin-top: 20px;
+	font-size: 1.2em;
+	color: rgb(127,127,127);
+}
+progress[value] {
+	    -webkit-appearance: none;
+		-moz-appearance: none;
+   		appearance: none;
+	    box-sizing: border-box;
+	    display: inline-block;
+	    height: 1em;
+	    width: 10em;
+	    vertical-align: -0.2em;
+		border: none;
+		border-radius: 5px;	 
+	}
+progress::-webkit-progress-inner-element {
+	    -webkit-appearance: inherit;
+		-moz-appearance: inherit;
+		appearance: inherit;
+	    box-sizing: inherit;
+	    height: 100%;
+	    width: 100%;
+	}
+progress[value]::-webkit-progress-bar {
+	    background-color: #ebebeb;
+	    height: 100%;
+	    width: 100%;
+		border-radius: 5px;
+	}
+progress[value]::-moz-progress-bar{
+		border-radius: 5px;	
+	}	
+progress::-webkit-progress-value {
+		border-radius: 5px;
+	    height: 100%;
+	    width: 50%; /* should be removed later */
+}
+#Handoo_progress progress{ 
+	margin-right:15px;
+}
+/* Style de la barre pour Chrome*/
+#Handoo_progress progress[value]::-webkit-progress-value {
+	background: #773E8F;
+	background-image:linear-gradient(to bottom, #8745a1, #773E8F, #331a3d);
+}
+/* Style de la barre pour Firefox*/
+#Handoo_progress progress[value]::-moz-progress-bar {
+	background: #773E8F; 
+	background-image:linear-gradient(to bottom, #8745a1, #773E8F, #331a3d);
+}
+#Handoo_progress > span{
+	color: rgba(0, 0, 0, 0.7);
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 8px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);	
+}
+ 
+/*End*/
+
+
+/*For mobile*/
+@media all and (max-width: 1400px){
+	body{
+		font-size: 0.8em;
+		/*margin: 0 10%;*/
+	}
+	
+	body .nav .center{
+		margin-left: 23%;
+	}
+	
+	body .nav .center a{
+		padding: 40px 5px;
+	}
+	
+	td textarea{
+		width: 100%;
+		font-size:12px;
+	}
+	
+	.link{
+		font-size: 1.5em;
+	}
+	
+	form .formLeft div .label{
+		background-size: 15px 15px;
+	}
+	
+	.formSelector form p{
+		font-size: 0.8em;
+	}
+	
+}
+
+@media all and (max-width: 1100px){
+	body{
+		/*margin: 20px 20px;*/
+		margin-top: 0px;
+	}
+	
+	body .nav .center{
+		margin-left: 29%;
+	}
+	
+	.writtenSpec p{
+		display: none;
+	}
+	
+	.improve, .to_do, .proofed, .written{
+		margin: auto;
+		float: none;
+		margin-bottom: 10px;
+	}
+	
+	.writtenSpec a{
+		clear: both;
+		display: block;
+	}
+	
+	.popup_block p{
+		display: block;
+	}
+	
+	.first{
+		font-size: 0.7em;
+		margin: 0px 10px;
+	}
+	
+	.link{
+		font-size: 1.5em;
+	}
+	
+	.formSelector form p{
+		font-size: 0.8em;
+	}
+	
+	.formSelector form select{
+		font-size: 0.7em;
+	}
+}
+
+@media all and (max-width: 900px){
+	body{
+		font-size: 0.6em;
+		/*margin: 0 5px;*/
+	}
+	
+	 .nav .center {
+		margin-left: 32%;
+		font-size: 1.2em;
+		margin-top: 28px;
+	}
+	
+	.tableAdmin t tr .lastColumn{
+		font-size: 0.9em;
+	}
+	
+	form .formLeft div .label{
+		background-size: 11px 11px;
+	}
+	
+	.tableAdmin{
+		font-size: 1.2em;
+	}
+	
+	.nav .right{
+		margin-top: 23.5px;
+	}
+	
+	.link{
+		font-size: 1.8em;
+	}
+	
+	.formSelector form p{
+		font-size: 0.8em;
+	}
+	
+	.formSelector form select{
+		font-size: 0.8em;
+	}
+}
+/*End*/
